@@ -243,7 +243,7 @@ footer {
 }
 
 footer h2 {
-    font-size: 63px;
+    font-size: 36px;
     padding: 40px 0;
 }
 
@@ -256,7 +256,7 @@ footer label {
 footer input {
     background: transparent;
     border: none;
-    border-bottom: 2px solid #5c1d92;
+    border-bottom: 2px solid #fff;
     width: 400px;
     margin-bottom: 20px;
 }
@@ -264,7 +264,7 @@ footer input {
 footer textarea {
     background: transparent;
     border: none;
-    border: 2px solid #5c1d92;
+    border: 2px solid #fff;
     width: 400px;
     display: block;
 }
