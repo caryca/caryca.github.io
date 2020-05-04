@@ -1,2 +1,2 @@
 # caryca.github.io
-this is strona kursu theawwesomes
+to jest moja strona
