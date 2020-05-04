@@ -1,0 +1,370 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500,600');
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: ' ';
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+body {
+    margin: 0;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #5c1d92;
+    text-transform: lowercase;
+}
+
+h1,
+h2 {
+    line-height: 1;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+p {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    text-transform: none;
+    font-weight: 200;
+    line-height: 160%;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+.btn {
+    background-color: transparent;
+    border: 2px solid #c244c1;
+    padding: 12.5px 25px;
+    letter-spacing: 2px;
+    margin-top: 28px;
+    display: inline-block;
+    transition: .3s ease-in-out;z
+    transition-property: color, background-color;
+}
+
+.btn:hover {
+    background-color: #C92493;
+    color: white;
+}
+
+header {
+    height: 445px;
+    background-image: linear-gradient(to right top, #8E41D8 , #FFC9F1);
+    text-align: center;
+    position: relative;
+    margin-bottom: 50px;
+    padding-top: 150px;
+}
+
+header::before,
+header::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: block;
+    height: 75px;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+header h1 {
+    font-size: 90px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+header .tagline {
+    color: white;
+    letter-spacing: 2px;
+    text-transform: lowercase;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+
+
+/*
+
+header::before {
+    background-image: url('../img/rational.svg');
+    bottom: -35px;
+}
+
+/*
+header::after {
+    background-image: url('../img/wave-top2.svg');
+    bottom: 75px;
+}
+
+header h1 {
+    font-size: 90px;
+    color: white;
+    letter-spacing: 1px;
+}
+/*/
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background: linear-gradient(to right, rgba(202, 73, 185, .5), rgba(148, 39, 240, .5));
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 200;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 25px 12.5px 25px 12.5px;
+}
+
+nav li a {
+    transition: color 0.4s ease-in-out;
+}
+
+nav li a:hover {
+    color: #FF7BAC;
+}
+.js-toggle-nav {
+    display: none;
+}
+
+article {
+	width: 80%;
+	max-width: 960px;
+	margin: 0 auto;
+}
+.text-img {
+    margin-top: 25px;
+}
+
+.about {
+    margin-top: 100px;
+}
+
+.about-section {
+    padding-left: 140px;
+    position: relative;
+}
+
+.about-section h2 {
+    margin-bottom: 35px;
+    font-size: 27px;
+}
+
+.about-counter {
+    display: inline-block;
+    font-size: 247px;
+    line-height: 1;
+    font-weight: 600;
+    position: absolute;
+    top: -30px;
+    z-index: -10;
+    left: 0;
+}
+
+.about-counter--first {
+    color: #E3B4FC;
+}
+
+.about-counter--second {
+    color: #E3B4FC;
+}
+
+.about-counter--third {
+    color: #E3B4FC;
+}
+
+.lovely-lidia {
+    height: 305px;
+    background: url('../img/pacyfik.jpg') no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    margin: 40px 0 85px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+}
+/*
+.lovely-lidia::after {
+    content: '';
+    background: url('../img/wave-bottom.svg') no-repeat;
+    background-repeat: no-repeat;
+    background-position: left center;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -35px;
+    width: 100%;
+    display: block;
+    height: 75px;
+}
+/*/
+
+.lovely-lidia h2 {
+    font-size: 73px;
+}
+
+footer {
+    background-image: linear-gradient(to right, #FF7BAC , #FF0038);
+    position: relative;
+    padding: 45px 0;
+    margin-top: 75px;
+    overflow: hidden;
+}
+
+footer h2 {
+    font-size: 63px;
+    padding: 40px 0;
+}
+
+footer label {
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+footer input {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #5c1d92;
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+footer textarea {
+    background: transparent;
+    border: none;
+    border: 2px solid #5c1d92;
+    width: 400px;
+    display: block;
+}
+
+form button {
+    background-color: transparent;
+    border: 2px solid #fff;
+    padding: 12px 55px;
+    letter-spacing: 2px;
+    margin-top: 28px;
+    font-size: 15px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    color: #fff;
+    text-transform: lowercase;
+}
+
+footer p {
+    letter-spacing: 1px;
+    margin-top: 220px;
+    text-transform: uppercase;
+}
+
+/*
+czary
+/*/
+
+
+@media all and (max-width: 768px) {
+    .text-img {
+        width: 100%;
+    }
+    header::after,
+    header::before {
+        height: 60px;
+    }
+    header::after {
+        bottom: 45px;
+    }
+    footer p {
+        margin-top: 0;
+        margin-bottom: 50px;
+    }
+    footer input,
+    footer textarea {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 550px) {
+    .js-menu {
+        display: none;
+    }
+    .js-toggle-nav {
+        display: block;
+        height: 20px;
+        right: 20px;
+        top: 20px;
+        border: 2px solid #3d0071;
+        font-size: 15px;
+        font-weight: bold;
+        background: transparent;
+        letter-spacing: 1px;
+        color: #3d0071;
+        text-transform: uppercase;
+        padding: 15px;
+        line-height: 0;
+        z-index: 10;
+        position: fixed;
+    }
+    nav {
+        background-image: linear-gradient(to right top, #fe6a82, #9326f1);
+    }
+    ul.js-menu {
+        height: 300px;
+    }
+    ul.js-menu li {
+        display: block;
+    }
+    header {
+        height: 300px;
+        padding-top: 100px;
+    }
+    header h1 {
+        font-size: 60px;
+    }
+    .lovely-lidia h2 {
+        font-size: 50px;
+        text-align: center;
+    }
+    .about-counter {
+        font-size: 160px;
+        left: 10px;
+    }
+    .about-section {
+        padding-left: 100px;
+    }
+    header::before {
+        bottom: -30px;
+    }
+    header::after {
+        background: none;
+    }
+}
